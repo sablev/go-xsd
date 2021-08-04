@@ -3,11 +3,11 @@ package main
 import (
 	"encoding/xml"
 
-	"github.com/metaleap/go-xsd/xsd-makepkg/tests"
+	"github.com/sablev/go-xsd/xsd-makepkg/tests"
 
-	"github.com/metaleap/go-util/dev/go"
+	"github.com/sablev/go-util/dev/go"
 
-	svg "github.com/metaleap/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd_go"
+	svg "github.com/sablev/go-xsd-pkg/www.w3.org/TR/2002/WD-SVG11-20020108/SVG.xsd_go"
 )
 
 type SvgDoc struct {
@@ -17,7 +17,7 @@ type SvgDoc struct {
 
 func main() {
 	var (
-		dirBasePath  = udevgo.GopathSrcGithub("metaleap", "go-xsd", "xsd-makepkg", "tests", "xsd-test-svg")
+		dirBasePath  = udevgo.GopathSrcGithub("sablev", "go-xsd", "xsd-makepkg", "tests", "xsd-test-svg")
 		makeEmptyDoc = func() interface{} { return &SvgDoc{} }
 	)
 	tests.TestViaRemarshal(dirBasePath, makeEmptyDoc)

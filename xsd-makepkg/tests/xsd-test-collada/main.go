@@ -4,12 +4,12 @@ import (
 	"encoding/xml"
 	"log"
 
-	"github.com/metaleap/go-xsd/xsd-makepkg/tests"
+	"github.com/sablev/go-xsd/xsd-makepkg/tests"
 
-	"github.com/metaleap/go-util/dev/go"
+	"github.com/sablev/go-util/dev/go"
 
-	collada14 "github.com/metaleap/go-xsd-pkg/khronos.org/files/collada_schema_1_4_go"
-	collada15 "github.com/metaleap/go-xsd-pkg/khronos.org/files/collada_schema_1_5_go"
+	collada14 "github.com/sablev/go-xsd-pkg/khronos.org/files/collada_schema_1_4_go"
+	collada15 "github.com/sablev/go-xsd-pkg/khronos.org/files/collada_schema_1_5_go"
 )
 
 type Col14Doc struct {
@@ -24,9 +24,9 @@ type Col15Doc struct {
 
 func main() {
 	var (
-		col14DirBasePath  = udevgo.GopathSrcGithub("metaleap", "go-xsd", "xsd-makepkg", "tests", "xsd-test-collada", "1.4.1")
+		col14DirBasePath  = udevgo.GopathSrcGithub("sablev", "go-xsd", "xsd-makepkg", "tests", "xsd-test-collada", "1.4.1")
 		col14MakeEmptyDoc = func() interface{} { return &Col14Doc{} }
-		col15DirBasePath  = udevgo.GopathSrcGithub("metaleap", "go-xsd", "xsd-makepkg", "tests", "xsd-test-collada", "1.5")
+		col15DirBasePath  = udevgo.GopathSrcGithub("sablev", "go-xsd", "xsd-makepkg", "tests", "xsd-test-collada", "1.5")
 		col15MakeEmptyDoc = func() interface{} { return &Col15Doc{} }
 	)
 	if false {

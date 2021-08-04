@@ -1,0 +1,6 @@
+.idea/
+.vscode/
+dist/
+bin/
+configs/goreleaser/
+configs/.netrc
